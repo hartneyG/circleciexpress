@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 version: 2.1
 jobs: - node test 
   build:
     docker: #  tircleci/node:10.0.0 # the primary container, where your job's commands are run
         - image: circleci/node:10.0.0 
+=======
+version: 
+        - image: circleci/node:10.0.0  # run in the background
+>>>>>>> a60c6fec037d9a0e523a51a1bbe0f4bcc7d690ae
     steps:
       - checkout # check out the code in the project directory
       - run: npm install 
